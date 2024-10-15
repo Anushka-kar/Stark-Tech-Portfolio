@@ -1,6 +1,66 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+
+
+/* Use a custom font-face for Arrus BT */
+@font-face {
+  font-family: 'Arrus BT';
+  src: url('https://example.com/path-to-your-font/arrusbt.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* General body font */
+body {
+  font-family: 'Arrus BT', sans-serif;
+  font-weight: 300; /* Light text for general content */
+}
+
+/* Bold for headings and sections */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700; /* Bold for all heading tags */
+}
+
+/* Bold for the navbar */
+.navbar a {
+  font-weight: 600; /* Semi-bold for navigation links */
+}
+
+/* Bold for buttons */
+button, .btn {
+  font-weight: 700; /* Bold for buttons */
+  font-family: 'Arrus BT', sans-serif;
+}
+
+/* Bold for emphasized text */
+strong {
+  font-weight: 700; /* Bold for strong/emphasized text */
+}
+
+/* Customize sections */
+.sectionTag {
+  font-weight: 700; /* Bold for section titles */
+}
+
+.sectionSubTag {
+  font-weight: 400; /* Normal weight for section subtitles */
+}
+
+/* Customize footer */
+footer {
+  font-weight: 600; /* Semi-bold for footer text */
+}
+
+/* Navbar Search Input Styling */
+.search-bar input {
+  font-weight: 400; /* Normal weight for search input text */
+}
+
+/* Form input fields */
+input[type="text"], input[type="email"], input[type="number"] {
+  font-weight: 400; /* Normal weight for form inputs */
+}
+
+
 
 *{
   margin: 0;
@@ -28,14 +88,14 @@ html,body{
 
 ::-webkit-scrollbar-thumb {
   /* background-color: rgb(255, 0, 0); */
-  background: linear-gradient(135deg, rgb(67, 0, 0), rgb(255, 56, 56));
+  background: linear-gradient(135deg, rgb(67, 0, 0), rgb(251, 5, 5));
   border-radius: 4px;
   border: 1px solid rgb(149, 6, 113);
   transition: background 0.3s ease-in-out !important;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(135deg, rgb(243, 18, 18), rgb(112, 2, 2));
+  background: linear-gradient(135deg, rgba(119, 18, 18, 0.793), rgb(70, 3, 3));
 }
 
 #progress-container {
@@ -51,7 +111,7 @@ html,body{
 #progress-bar {
   height: 53%;
   width: 0;
-  background: linear-gradient(90deg, rgb(255, 0, 0) 0%, rgb(255, 153, 153) 50%, rgb(250, 0, 0) 100%);
+  background: linear-gradient(90deg, rgb(205, 7, 20) 0%, rgb(181, 115, 115) 50%, rgb(151, 6, 6) 100%);
   box-shadow: 0 0 4px rgba(255, 0, 0, 0.7), 0 0 10px rgba(192, 100, 2, 0.7);
   transition: width 0.09s ease-in-out;
   border-radius: 10px;
@@ -114,7 +174,7 @@ html,body{
   background-blend-mode: darken;
 }
 .background1{
-  background: rgb(0, 0, 0, 0.5) url(assets/bg3.jpg);
+  background: rgb(41, 14, 14) url(assets/bg3.jpg);
   background-size: cover;
   background-blend-mode: darken;
 }
@@ -138,13 +198,13 @@ html,body{
   transition: color 0.3s ease, text-shadow 0.4s ease-in-out;
 }
 .nav-list li a:hover{
-  color: rgb(238, 10, 10);
+  color: rgb(206, 6, 6);
   text-decoration: none;
-  text-shadow: 2px 2px 15px rgba(255, 238, 107, 0.847);
+  text-shadow: 2px 2px 15px rgba(202, 178, 1, 0.847);
 }
 .nav-list li a.active{
-  color: rgb(238, 10, 10);
-  border-bottom: 2px solid rgb(238, 10, 10);
+  color: rgb(191, 1, 1);
+  border-bottom: 2px solid rgb(90, 66, 66);
 }
 
 /* Right Nav */
